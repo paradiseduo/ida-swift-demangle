@@ -7,7 +7,7 @@ import subprocess
 
 class Swift_Dump_t(idaapi.plugin_t):
     comment = "Swift Dump plugin for IDA Pro 7.0"
-    help = ""
+    help = "https://github.com/paradiseduo/ida-swift-demangle/issues"
     wanted_name = "Swift Dump"
     wanted_hotkey = "Ctrl-Alt-D"
     flags = idaapi.PLUGIN_KEEP
