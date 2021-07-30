@@ -28,7 +28,7 @@ class Swift_Dump_t(idaapi.plugin_t):
                 name = name[1:]
             AllFuncName += [name]
 
-        proc = subprocess.Popen('xcrun swift-demangle', shell=True, stdout=subprocess.PIPE, stdin=subprocess.PIPE)
+        proc = subprocess.Popen('xcrun swift-demangle --simplified --compact', shell=True, stdout=subprocess.PIPE, stdin=subprocess.PIPE)
         proc.stdin.write('\n'.join(AllFuncName))
         proc.stdin.close()
         results = proc.stdout.read().split('\n')
