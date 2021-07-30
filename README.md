@@ -28,3 +28,6 @@ Open IDA Pro 7.0, Edit->Plugin->Swift Dump
 
 ## Required
 MacOS and install Xcode.app
+
+## About testSwift.py
+slowly but nice
